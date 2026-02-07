@@ -48,6 +48,7 @@ fun EventLine.isZeroDuration(): Boolean {
 // Check if a line is dialogue
 fun EventLine.isDialogue(): Boolean {
     return this.style.matches(Regex("Main|Default|Alt"))
+    return this.style.matches(Regex("main|alt|italics|italicstop|top|flashback|flashbacktop|flashback italics|flashbackitalicstop|overlap|overlaptop|overlap italics|effect"))
 }
 
 // Check if premux has multiple audio tracks with English as second track
@@ -129,6 +130,7 @@ fun printMkvInfoTracks(outputPath: String) {
     println("+${"-".repeat(num_dashes + 1)}")
 }
 
+
 subs {
     readProperties("sub.properties", "local.properties", "../sekrit.properties")
     episodes(getList("episodes"))
@@ -188,7 +190,7 @@ subs {
         scriptInfo {
             title = get("group").get()
             scaledBorderAndShadow = true
-            wrapStyle = WrapStyle.NO_WRAP
+            //wrapStyle = WrapStyle.SMART_WRAP
             values["LayoutResX"] = resX ?: -1
             values["LayoutResY"] = resY ?: -1
         }
@@ -398,7 +400,7 @@ subs {
         // Remove dialogue lines from forced Signs & Song tracks.
         val strip_dialogue by task<ASS> {
             from(cleanmerge.item())
-            ass { events.lines.removeIf { it.isDialogue() } }
+            ass {events.lines.removeIf { it.isDialogue() } }
         }
 
         // Merge the forced track (if present) with the stripped dialogue.
