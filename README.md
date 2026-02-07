@@ -1,14 +1,14 @@
-# The Not Kaleido SubKt Project template
+# The Not Kaleido SubKt "project" template
 
 [![SubKt Compatibility](https://img.shields.io/badge/SubKt-0.1.27-blue)](https://github.com/LightArrowsEXE/SubKt)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Clone this repo
 and copy all the files over
-when making a new fansubbing project.
+when making a new fansubbing "project".
 
 This template is designed to streamline the process
-of creating and maintaining subtitles for [CrappySubs](https://github.com/CrappySubs) projects.
+of creating and maintaining subtitles for [CrappySubs](https://github.com/CrappySubs) "projects".
 
 ## Dependencies
 
@@ -33,7 +33,7 @@ of creating and maintaining subtitles for [CrappySubs](https://github.com/Crappy
 ```
 project-root/
 ├── build.gradle.kts                      # SubKt Gradle build script
-├── sub.properties                        # Project configuration
+├── sub.properties                        # "project" configuration
 ├── common/                               # Shared resources
 │   ├── warning.ass                       # Optional player warning
 │   └── fonts/                            # Common fonts
@@ -98,7 +98,7 @@ It's highly recommended to set it in the _lyrics_ file.
 
 ## Getting Started
 
-### 1. Project Setup
+### 1. "project" Setup
 
 1. **Use the Template Repository:**
 
@@ -106,13 +106,13 @@ It's highly recommended to set it in the _lyrics_ file.
 
    ![Github "Use this template" button](https://i.imgur.com/zT0SLVM.png)
 
-2. **Set up project files:**
+2. **Set up "project" files:**
 
    The project file should be updated on a per-project basis.
    This may also include the types of expected files,
    as well as metadata.
 
-   For a fairly regular project,
+   For a fairly regular "project",
    set up the following files:
 
    - Set up the `sub.properties` file.
@@ -128,9 +128,9 @@ It's highly recommended to set it in the _lyrics_ file.
    - (Optional) Set up INS and Extra subtitle files.
    - Collect all the fonts and put them in the `episode/fonts/` directory (i.e. `01/fonts/`).
 
-3. **Build project:**
+3. **Build "project":**
 
-   Use the Gradle wrapper to build the project:
+   Use the Gradle wrapper to build the "project":
 
    ```sh
    # Unix
