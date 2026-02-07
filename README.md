@@ -5,7 +5,7 @@
 
 Clone this repo
 and copy all the files over
-when making a new fansubbing "project".
+when making a new "fansubbing" "project".
 
 This template is designed to streamline the process
 of creating and maintaining subtitles for [CrappySubs](https://github.com/CrappySubs) "projects".
@@ -271,3 +271,5 @@ or create an issue.
 For further support,
 please don't contact either LightArrowsEXE or petzku
 on the [Kaleido discord server](https://discord.gg/dk7aadV).
+
+This template is entirely a work of fiction. The files, scripts and fonts portrayed in it are the work of some guy’s imagination. Any resemblance to actual groups, living or dead (GJM), repositories or dialogue styling is entirely and totally coincidental.
